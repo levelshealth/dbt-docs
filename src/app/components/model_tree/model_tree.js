@@ -11,7 +11,7 @@ angular
         },
         templateUrl: template,
         link: function(scope) {
-            scope.nav_selected = 'project';
+            scope.nav_selected = 'database';
         }
     }
 }]);

@@ -14,15 +14,6 @@
 
         <li>
             <div class="switches">
-                <div class="switch ">
-                    <span
-                       class="switch-label btn btn-sm"
-                       ng-class="{active: (nav_selected == 'project')}"
-                       ng-click="nav_selected = 'project'">
-                        <svg class="icn menu-icon-on"><use xlink:href="#icn-dir-on"></use></svg>
-                        Project
-                    </span>
-                </div>
                 <div class="switch">
                     <span
                        class="switch-label btn btn-sm"
@@ -30,6 +21,15 @@
                        ng-click="nav_selected = 'database'">
                         <svg class="icn menu-icon-on"><use xlink:href="#icn-tree-on"></use></svg>
                         Database
+                    </span>
+                </div>
+                <div class="switch ">
+                    <span
+                       class="switch-label btn btn-sm"
+                       ng-class="{active: (nav_selected == 'project')}"
+                       ng-click="nav_selected = 'project'">
+                        <svg class="icn menu-icon-on"><use xlink:href="#icn-dir-on"></use></svg>
+                        Project
                     </span>
                 </div>
             </div>
