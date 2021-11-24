@@ -71,6 +71,17 @@
 
         <li>
             <div class="menu" ng-show="nav_selected == 'database'">
+                <div ng-show="tree.exposures.length > 0">
+                    <strong>Exposures</strong>
+                    <ul style="display: block">
+                        <model-tree-line
+                            item="item"
+                            resource-type="exposure"
+                            ng-repeat="item in tree.exposures"></model-tree-line>
+                    </ul>
+                    <br />
+                </div>
+
                 <strong>Tables and Views</strong>
                 <ul>
                     <model-tree-line

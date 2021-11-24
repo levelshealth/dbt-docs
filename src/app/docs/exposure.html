@@ -24,12 +24,15 @@
                     <span class="break">{{ exposure.name }}</span>
                     <small>exposure</small>
 
-                    <div class='pull-right' ng-show="exposure.url">
-                        <a class='btn text-white btn-primary btn-sm' ng-href="{{ exposure.url }}" target="_blank">View this exposure</a>
-                    </div>
+                    <span ng-show="exposure.url">
+                        <a class='btn text-white btn-primary btn-sm' ng-href="{{ exposure.url }}" target="_blank">View this {{ exposure.type }}</a>
+                    </span>
 
                     <div class='clearfix'></div>
                 </h1>
+                <span ng-if="exposure.maturity === 'high'" class="label label-success">Maturity: {{ exposure.maturity }}</span>
+                <span ng-if="exposure.maturity === 'medium'" class="label label-warning">Maturity: {{ exposure.maturity }}</span>
+                <span ng-if="exposure.maturity === 'low'" class="label label-danger">Maturity: {{ exposure.maturity }}</span>
 
             </div>
         </div>
